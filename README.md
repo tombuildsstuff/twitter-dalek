@@ -9,3 +9,4 @@ The following Environment Variables can be set, which can be obtained through a 
 * `TWITTER_ACCESS_TOKEN` - The Access Token from the Twitter Application
 * `TWITTER_ACCESS_SECRET` - The Access Secret from the Twitter Application
 * `TWITTER_USERNAME` - Your Twitter username
+* `DAYS_TO_KEEP` - (Optional) The number of days that tweets should be kept. Defaults to `7`.

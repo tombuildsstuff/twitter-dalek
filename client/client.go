@@ -9,13 +9,14 @@ import (
 
 type Client struct {
 	maximumAge    time.Duration
+	daysToRetain  int
 	tweetsPerPage int
 	twitter       *twitter.Client
 	username      string
 	user          *twitter.User
 }
 
-func New(c *twitter.Client, username string) (*Client, error) {
+func New(c *twitter.Client, username string, daysToRetain int) (*Client, error) {
 	user, _, err := c.Users.Show(&twitter.UserShowParams{
 		ScreenName: username,
 	})
@@ -24,7 +25,7 @@ func New(c *twitter.Client, username string) (*Client, error) {
 	}
 
 	client := Client{
-		maximumAge:    -7 * (24 * time.Hour),
+		maximumAge:    time.Duration((-1*daysToRetain)*24) * time.Hour,
 		tweetsPerPage: 200,
 		twitter:       c,
 		username:      username,
