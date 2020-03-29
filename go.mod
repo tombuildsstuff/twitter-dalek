@@ -1,5 +1,7 @@
 module github.com/tombuildsstuff/twitter-dalek
 
+go 1.14
+
 require (
 	github.com/cenkalti/backoff v2.1.0+incompatible // indirect
 	github.com/dghubble/go-twitter v0.0.0-20181218060016-7ecc41c771b6

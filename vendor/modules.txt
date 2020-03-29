@@ -1,10 +1,17 @@
 # github.com/cenkalti/backoff v2.1.0+incompatible
+## explicit
 github.com/cenkalti/backoff
 # github.com/dghubble/go-twitter v0.0.0-20181218060016-7ecc41c771b6
+## explicit
 github.com/dghubble/go-twitter/twitter
 # github.com/dghubble/oauth1 v0.5.0
+## explicit
 github.com/dghubble/oauth1
 # github.com/dghubble/sling v1.2.0
+## explicit
 github.com/dghubble/sling
 # github.com/google/go-querystring v1.0.0
+## explicit
 github.com/google/go-querystring/query
+# github.com/stretchr/testify v1.4.0
+## explicit
